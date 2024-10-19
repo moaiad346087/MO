@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palais de la thyroïde</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .content, .forum {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            background-color: #ffffff; /* خلفية بيضاء */
+            display: none; /* Masquer par défaut */
+            margin-top: 20px;
+            border-radius: 10px; /* زوايا دائرية */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        button {
+            margin: 10px;
+            padding: 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 125px;
+            height: 125px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Palais de la thyroïde</h1>
+
+    <div class="button-container">
+        <button onclick="toggleDescription()">Définition</button>
+        <button onclick="toggleCauses()">Causes</button>
+        <button class="forum-button" onclick="toggleForum(1)">symptômes</button>
+        <button class="forum-button" onclick="toggleForum(2)">Diagnostic</button>
+    </div>
+    <div class="button-container">
+        <button class="forum-button" onclick="toggleForum(3)">معلومات مطور الصفحة</button>
+        <button class="forum-button" onclick="toggleForum(4)">conseil</button>
+        <button class="forum-button" onclick="toggleForum(5)">Médicaments</button>
+    </div>
+
+    <div id="description" class="content">
+        <h2>Qu'est-ce que l'hypothyroïdie ?</h2>
+        <p>
+            L'hypothyroïdie, également appelée hypothyroïdie, survient lorsque la glande thyroïde ne sécrète pas une quantité suffisante d'hormones thyroïdiennes. 
+            Cela concerne également les cas de "curs des glandes thyroïdiennes".
+            Elle est connue sous le nom d'hormone thyroxine, qui effectue de nombreuses tâches qui affectent le métabolisme et la croissance. 
+            La glande thyroïde est située dans la partie inférieure avant du cou. 
+            La glande thyroïde est l'une des glandes les plus importantes du corps, car elle fournit à l'organisme l'énergie nécessaire à l'accomplissement des processus vitaux et contrôle également certains organes, comme le contrôle des battements cardiaques. 
+            Si la glande thyroïde ne sécrète pas ses hormones en quantité suffisante, cela entraîne un ralentissement des processus vitaux. 
+            L'incidence de l'hypothyroïdie augmente avec l'âge et est généralement plus fréquente chez les femmes. 
+            Elle est également considérée comme une maladie génétique.
+        </p>
+      
+        <h2>Degrés d'hypothyroïdie</h2>
+        <p>
+            Les degrés d'hypothyroïdie sont divisés en trois degrés :
+            <br>1. Hypothyroïdie simple : Le patient ne présente aucun symptôme et les niveaux d'hormones T3 et T4 semblent normaux.
+            <br>2. Hypothyroïdie modérée : Le patient présente des symptômes d'hypothyroïdie et doit suivre un traitement.
+            <br>3. Hypothyroïdie sévère : Le patient peut devoir rester à l'hôpital en raison de symptômes cutanés graves.
+        </p>
+      <img src="https://cdn.altibbi.com/cdn/cache/1000x500/image/2020/03/17/54ca0a9f37673eaa24f9faec2622370e.png.webp" alt="Cloudy Sky" width="500" height="200">
+    </div>
+
+    <div id="causes" class="content">
+        <h2>Causes de l'hypothyroïdie</h2>
+        <p>
+            - Maladies auto-immunes.
+            <br>- Utilisation de certains médicaments.
+            <br>- Chirurgie de la thyroïde.
+            <br>- Radiothérapie.
+            <br>- Hypothyroïdie congénitale.
+            <br>- Thyroïdite.
+            <br>- Obtenir trop ou pas assez d'iode.
+            <br>- Troubles de l'hypophyse.
+        </p>
+    </div>
+
+    <div id="forum1" class="forum">
+        <h2>Symptômes de l'hypothyroïdie</h2>
+        <p> Les symptômes de l'hypothyroïdie varient d'un patient à l'autre en raison du déficit différent en hormones thyroïdiennes.</p> 
+<p>Maladie thyroïdienne et période de déficit en hormones thyroïdiennes. Dans certains cas, les patients peuvent ne présenter aucun symptôme d’insuffisance glandulaire.</p>
+ <p>suit :</p>
+ <p>. Rythme cardiaque lent.</p>
+ <p>.Gonflement du devant du cou.</p>
+ <p>. Fatigue et sensation d'épuisement.</p>
+ <p>.Dépression.</p>
+ <p>.La prise de poids, malgré parfois la perte d’appétit, est l’un des symptômes les plus importants de l’hypothyroïdie.</p>
+ <p>. Difficulté à perdre du poids.</p>
+ <p>. Sensibilité au froid et incapacité à Tolérance au froid.</p>
+ <p>. Hypersomnie.</p>
+ <p>. Perte de cheveux.</p>
+ <p>. Cheveux secs.</p>
+ <p>. Peau sèche et pâle.</p>
+ <p>. Les ongles se cassent facilement.</p>
+ <p>. Gonflement du visage.</p>
+ <p>. Spasme musculaire.</p>
+
+    </div>
+
+    <div id="forum2" class="forum">
+        <h2>Comment diagnostique-t-on une thyroïde sous-active ou une hypothyroïdie ?</h2>
+        <p>
+L'une des méthodes les plus importantes sur lesquelles le médecin s'appuie pour diagnostiquer une glande thyroïde sous-active concerne les symptômes qui...
+De quoi souffre le patient et tests de laboratoire pour déterminer les niveaux d'hormone thyroïdienne T4 et d'hormone stimulant la thyroïde</p>   <p>Si le taux d'hormone thyroïdienne T4 est faible et celui de l'hormone stimulant la thyroïde est élevé, cela indique une infection.
+Hypothyroïdie.</p>
+<p>Le patient reçoit également un diagnostic d'hypothyroïdie en connaissant ses antécédents personnels.
+La maladie familiale est due à une insuffisance de la glande thyroïde et à d'autres maladies auto-immunes telles que le diabète.
+Diabète et maladie coeliaque </p>
+ <p> L'imagerie par résonance peut être utilisée
+Magnétique.
+</p>
+    </div>
+  <B></B>
+
+    <div id="forum3" class="forum">
+        <h2>معلومات حول مطورين الصفحة</h2>
+        <p style="text-align: right; font-size: 24px;">اسم المطور:مؤيد بالله قاسمية</p>
+        <p style="text-align: right; font-size: 24px;">Nom du développeur : Moaiad Billah Guesmia</p>
+        <p style="text-align: right; font-size: 24px;">اسم مشرفة التطوير:ملاك مانع</p>
+        <p style="text-align: right; font-size: 24px;">Nom du superviseur du développement : Malek Mana</p>
+        <p style="text-align: right; font-size: 24px;">هدي زكارة في هالة اااااا   لي لاعبة روحة شاابة ااااا</p>
+    </div>
+
+    <div id="forum4" class="forum">
+        <h2>Conseils pour vivre avec la thyroïde</h2>
+        <p>Pour réduire l'aggravation de l'hypothyroïdie. Pour réduire les symptômes qui y sont associés, il est recommandé
+En suivant les instructions suivantes :
+<br>-Suivez une alimentation saine et équilibrée.
+     <br>- Faites de l’exercice pour maintenir un poids santé.
+<br>- Consultez votre médecin avant de consommer des aliments riches en fibres et des suppléments nutritionnels, comme le fer et le calcium. 
+         <br>- Comme cela peut affecter l’absorption du traitement
+Lévothyroxine.
+<br>-Dormez suffisamment.
+        <br>-  Pour réduire les sensations d’épuisement et de fatigue.
+<br>-. Respect du traitement recommandé par le médecin.
+</p>
+    </div>
+
+    <div id="forum5" class="forum">
+        <h2>Médicaments liés à l'hypothyroïdie</h2>
+        <p>Lactate de calcium</p>
+        <p>Thyroïde desséchée</p>
+        
+        
+    </div>
+
+    <script>
+        function toggleDescription() {
+            toggleVisibility('description');
+        }
+
+        function toggleCauses() {
+            toggleVisibility('causes');
+        }
+
+        function toggleForum(forumNumber) {
+            toggleVisibility('forum' + forumNumber);
+        }
+
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === 'block') {
+                element.style.display = 'none';
+            } else {
+                hideAll();
+                element.style.display = 'block';
+            }
+        }
+
+        function hideAll() {
+            document.getElementById('description').style.display = 'none';
+            document.getElementById('causes').style.display = 'none';
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById('forum' + i).style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
